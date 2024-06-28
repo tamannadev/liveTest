@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Utility Functions</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container-fluid d-flex align-items-center justify-content-center vh-100 bg-warning">
+        <div class="container bg-white rounded p-4 shadow">
+            <h1 class="text-center mb-4 bg-secondary text-white">JavaScript Utility Functions</h1>
+            <section class="mt-4 ">
+                <h2>Calculate Power</h2>
+                <form id="powerForm">
+                    <div class="form-group mb-2">
+                        <label for="voltage" class="sr-only">Voltage</label>
+                        <input type="number" class="form-control-lg mx-sm-3" id="voltage" name="voltage" placeholder="Voltage" required>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="current" class="sr-only">Current</label>
+                        <input type="number" class="form-control-lg mx-sm-3" id="current" name="current" placeholder="Current" required>
+                    </div> <br>
+                    <button type="submit" class="btn-lg border-0 btn-info mb-2">Calculate</button>
+                </form>
+                <p id="powerResult"></p>
+            </section>
+
+            <section class="mt-4">
+                <h2>Find Max Number in Array</h2>
+                <form id="maxNumberForm">
+                    <div class="form-group mb-2">
+                        <label for="numbers" class="sr-only">Numbers</label>
+                        <input type="text" class="form-control-lg mx-sm-3" id="numbers" name="numbers" placeholder="Comma-separated numbers" required>
+                    </div>
+                    <button type="submit" class="btn-lg border-0 btn-info mb-2">Find Max</button>
+                </form>
+                <p id="maxNumberResult"></p>
+            </section>
+
+            <section class="mt-4">
+                <h2>Merge Two Arrays</h2>
+                <form id="mergeArraysForm">
+                    <div class="form-group mb-2">
+                        <label for="array1" class="sr-only">Array 1</label>
+                        <input type="text" class="form-control-lg mx-sm-3" id="array1" name="array1" placeholder="Array 1" required>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="array2" class="sr-only">Array 2</label>
+                        <input type="text" class="form-control-lg mx-sm-3" id="array2" name="array2" placeholder="Array 2" required>
+                    </div>
+                    <button type="submit" class="btn-lg border-0 btn-info mb-2">Merge Arrays</button>
+                </form>
+                <p id="mergedArraysResult"></p>
+            </section>
+
+            <section class="mt-4">
+                <h2>Array Values Types</h2>
+                <form id="arrayValuesTypesForm">
+                    <div class="form-group mb-2">
+                        <label for="valuesArray" class="sr-only">Values</label>
+                        <input type="text" class="form-control-lg mx-sm-3" id="valuesArray" name="valuesArray" placeholder="Comma-separated values" required>
+                    </div>
+                    <button type="submit" class="btn-lg border-0 btn-info mb-2">Get Types</button>
+                </form>
+                <p id="arrayValuesTypesResult"></p>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
